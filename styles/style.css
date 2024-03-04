@@ -36,3 +36,248 @@ ul,
 ol {
   list-style: none;
 }
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 1140px;
+  gap: 30px;
+}
+
+.content__list {
+  height: 298px;
+  overflow-y: auto;
+  position: relative;
+}
+
+.search-form {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  align-items: end;
+  margin-bottom: 6px;
+}
+
+.content__details {
+  width: 100%;
+  height: 100%;
+}
+
+.result__video-container {
+  width: 711px;
+  height: 386px;
+  position: relative;
+  padding-bottom: 16px;
+}
+
+.result__video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.content__list-item:not(:last-child) {
+  padding-bottom: 30px;
+}
+
+
+.content__video-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: transparent;
+}
+
+.content__video-card-thumbnail {
+  width: 194px;
+  height: 103px;
+}
+
+.content__video-card-description-container {
+  width: 100%;
+}
+
+.search-form__fieldset-title {
+  font-family: 'Fira Sans Condensed', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #fff;
+  padding: 5px;
+}
+
+
+.content__video-card-title {
+  text-decoration: none;
+  color: #fff;
+  font-family: 'Oswald', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 100%;
+  text-transform: uppercase;
+}
+
+.content__accent {
+  color: gray;
+}
+
+.content__card-link {
+  text-decoration: none;
+  font-family: 'Fira Sans Condensed', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 16px;
+  color: #fff;
+}
+
+.title {
+  font-family: 'Oswald', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 75px;
+  line-height: 94%;
+  text-transform: uppercase;
+  color: #fff;
+  padding-bottom: 26px;
+}
+
+.content__video-card-description {
+  padding-top: 6px;
+}
+
+.visually-hidden {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.search-form__fieldset {
+  border: 0;
+}
+
+.search-form__label {
+  width: fit-content;
+  display: flex;
+  gap: 5px;
+}
+
+.search-form__label-text {
+  font-family: 'Fira Sans Condensed', Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.search-form__checkbox-list {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.search-form__textfield {
+  font-family: 'Fira Sans Condensed', Arial, sans-serif;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+  appearance: none;
+  background-color: transparent;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  border-left: 0;
+  border-right: 0;
+  outline: none;
+  width: 225px;
+  height: 27px;
+  gap: 10px;
+}
+
+.search-form__submit-button {
+  width: 194px;
+  height: 34px;
+}
+
+.search-form__label:has(:focus-visible) {
+  outline: 1px solid #fff;
+  outline-offset: 2px;
+}
+
+.search-form__label:hover{
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.search-form__label:active {
+  outline: 1px solid #fff;
+  outline-offset: -1px;
+}
+
+.search-form__pseudo-checkbox {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  border: 1px solid #fff;
+}
+
+input[type='checkbox']:checked + .search-form__pseudo-checkbox {
+  outline: 6px solid white;
+  outline-offset: -30px;
+}
+
+.content__card-link_current .content__video-card {
+  background-color: #545050;
+}
+
+
+.button {
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid #fff;
+  color: #fff;
+  font-family: "Fira Sans Condensed", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  outline: none;
+  cursor: pointer;
+}
+
+.more-button {
+  width: 399px;
+  height: 34px;
+}
+
+.button:active {
+  border: 1px solid #FFF;
+  background: #545050;
+}
+
+.button:hover{
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button:focus-visible {
+  outline: 1px solid #FFF;
+  outline-offset: 2px;
+}
