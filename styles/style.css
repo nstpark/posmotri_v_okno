@@ -175,7 +175,7 @@ ol {
   font-weight: 400;
   font-size: 18px;
   line-height: 22px;
-  color: rgba(255, 255, 255, 0.7);
+  color: white;
 }
 
 .search-form__checkbox-list {
@@ -183,7 +183,7 @@ ol {
   justify-content: center;
   align-items: center;
   gap: 15px;
-  cursor: pointer;
+  cursor: pointer; 
 }
 
 .search-form__textfield {
